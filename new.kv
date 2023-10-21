@@ -1,0 +1,15 @@
+MDScreen:
+    md_bg_color: 'red'
+    MDTextField:
+        id: name_input
+        hint_text: "Enter your name"
+        pos_hint: {"center_x": 0.5, "center_y": 0.7}
+    MDRaisedButton:
+        text: "Say Hello"
+        pos_hint: {"center_x": 0.5, "center_y": 0.6}
+        on_release: app.say_hello()
+    MDLabel:
+        id: hello_label
+        text: "Hello"
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.4}
